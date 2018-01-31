@@ -1,0 +1,1 @@
+export {fetchLoggedInUserProfile} from './UserProfileSaga';
