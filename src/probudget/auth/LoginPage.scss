@@ -1,7 +1,37 @@
+.app{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-#loginpage{
-    
-    display:grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 50px 50px;
+.btn-googleplus {
+  background: #E93F2E;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b72213;
+}
+.btn-googleplus:link, .btn-googleplus:visited {
+  color: #fff;
+}
+.btn-googleplus:active, .btn-googleplus:hover {
+  background: #b72213;
+  color: #fff;
+}
+
+.about-pro-budget {
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    padding: 0.5rem 1rem;
+    margin-right: 4rem;
+    margin-left: 2rem;
+    background-color: #fff;
+    background-image: url(./../../assets/img/probudget-group-plan.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 164px auto;
 }

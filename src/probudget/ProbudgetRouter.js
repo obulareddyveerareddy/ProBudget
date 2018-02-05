@@ -1,7 +1,8 @@
 import React    from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom';
 
-import LoginPage from './auth/LoginPage';
+import LoginLink      from './auth/LoginLink';
+import HomeLink       from './dashboard/HomeLink'
 
 class PortfolioRouter extends React.Component{
 
@@ -13,7 +14,8 @@ class PortfolioRouter extends React.Component{
     console.log(this.props);
     return(
     <Switch>
-      <Route path="/"     exact   component={LoginPage} />
+      <Route path="/"     exact   component={LoginLink} />
+      <Route path="/probudget/dashboard/home"     exact   component={HomeLink} />
     </Switch>
     );
   }

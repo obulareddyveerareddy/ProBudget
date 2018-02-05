@@ -1,0 +1,1 @@
+export {getDashboardHomeLinkBean} from './DashboardHomeLinkSaga';

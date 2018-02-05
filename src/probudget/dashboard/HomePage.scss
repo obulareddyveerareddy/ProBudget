@@ -1,0 +1,16 @@
+#homePageId{
+    flex: 100%;
+    
+    .breadcrumb {
+        position: relative;
+        border-bottom: 1px solid #a4b7c1;
+        transition: left 0.25s, right 0.25s, width 0.25s;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1.5rem;
+        list-style: none;
+        background-color: #fff;
+    }
+}
