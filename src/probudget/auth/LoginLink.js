@@ -14,7 +14,12 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     checkLoginSession:(params)=>{
         console.log('~~~~~~~~~~~~~~~~~~~ >>> LoginLink <---> checkLoginSession <<< ~~~~~~~~~~~~~~~~~~~');
         dispatch(authAction.checkLoginSession(params));
+    },
+    userRecordSignIn:(params) => {
+        console.log('~~~~~~~~~~~~~~~~~~~ >>> LoginLink <---> checkLoginSession <<< ~~~~~~~~~~~~~~~~~~~',params);
+        dispatch(authAction.userRecordSignIn(params));
     }
+    
   }
 }
 
