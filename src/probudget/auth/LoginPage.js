@@ -36,7 +36,7 @@ class LoginPage extends React.Component{
   componentWillReceiveProps(nextProps){
     console.log('~~~~~~~~~~~~~~~~~~~ >>> LoginPage <---> componentWillReceiveProps <<< ~~~~~~~~~~~~~~~~~~~', nextProps);
     if(nextProps.authLoginLinkBean.user){
-      this.props.history.push('/probudget/dashboard/home');
+      this.props.history.push('/probudget/home/dashboard');
     }
   }
   

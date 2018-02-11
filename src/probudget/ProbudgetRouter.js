@@ -2,7 +2,7 @@ import React    from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom';
 
 import LoginLink      from './auth/LoginLink';
-import HomeLink       from './dashboard/HomeLink'
+import HomeLink       from './HomeLink'
 
 class PortfolioRouter extends React.Component{
 
@@ -14,8 +14,8 @@ class PortfolioRouter extends React.Component{
     console.log(this.props);
     return(
     <Switch>
-      <Route path="/"     exact   component={LoginLink} />
-      <Route path="/probudget/dashboard/home"     exact   component={HomeLink} />
+      <Route path="/"                   exact   component={LoginLink} />
+      <Route path="/probudget/home/*"   exact   component={HomeLink} />
     </Switch>
     );
   }

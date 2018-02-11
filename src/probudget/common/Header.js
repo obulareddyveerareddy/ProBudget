@@ -27,18 +27,9 @@ class Header extends React.Component {
             <i className="fa fa-bars"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
-            <div class="d-flex flex-row justify-content-end ml-auto mr-3">
-              <div class="d-flex flex-column mr-3 nav-icon-link">
-                <label><i class="fa fa-plus"></i> ADD</label>
-              </div>
-              <div class="d-flex flex-column mr-3 nav-icon-link">
-                <label><i class="fa fa-upload"></i> Upload</label>
-              </div>
-              <div class="d-flex flex-column mr-3 nav-icon-link">
-                <label><i class="fa fa-download"></i> Download</label>
-              </div>
-              <div class="d-flex flex-column mr-3 nav-icon-link">
-                <label><i class="fa fa-sign-out"></i></label>
+            <div className="d-flex flex-row justify-content-end ml-auto mr-3">
+              <div className="d-flex flex-column mr-3 nav-icon-link">
+                <label><i className="fa fa-sign-out"></i></label>
               </div>
             </div>
           </div>

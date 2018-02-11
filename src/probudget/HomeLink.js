@@ -1,6 +1,6 @@
 import { connect }      from 'react-redux'
 import HomePage         from './HomePage'
-import * as dashboardHomeLinkAction  from './../../store/actions/DashboardHomeLinkAction';
+import * as dashboardHomeLinkAction  from './../store/actions/DashboardHomeLinkAction';
 
 const mapStateToProps = (state, ownProps) => {
     console.log('~~~~~~~~~~~~~~~~~~~ >>> HomeLink <---> mapStateToProps <<< ~~~~~~~~~~~~~~~~~~~', state);

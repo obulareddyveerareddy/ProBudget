@@ -17,10 +17,26 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 app.use(require('webpack-hot-middleware')(compiler));
+app.use(express.static('src'));
 
 app.get('/', function(req, res) {
   console.log('------------------- >>> This is default get route <<< -------------------');
   res.sendFile(path.join( __dirname, '../src/index.html'));
+});
+
+app.get('/sw-toolbox.js', function(req, res) {
+  console.log('------------------- >>> This is /node_modules/sw-toolbox/sw-toolbox.js <<< -------------------');
+  res.sendFile(path.join( __dirname, '..//node_modules/sw-toolbox/sw-toolbox.js'));
+});
+
+app.get('/worker.js', function(req, res) {
+  console.log('------------------- >>> This is service worker route <<< -------------------');
+  res.sendFile(path.join( __dirname, '../src/worker.js'));
+});
+
+app.get('/manifest.json', function(req, res) {
+  console.log('------------------- >>> This is progressive webapp route <<< -------------------');
+  res.sendFile(path.join( __dirname, '../src/manifest.json'));
 });
 
 console.log('App.js Get Environment instance -- '+process.env.instance);

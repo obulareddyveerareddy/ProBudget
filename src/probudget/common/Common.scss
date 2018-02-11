@@ -52,7 +52,7 @@
         display:none;
         position:fixed;
         z-index: 1019;
-        width: 200px;
+        width: 220px;
         
         .sidebar-nav {
             position: relative;
@@ -68,6 +68,12 @@
     
     .sidebar-show{
         display:block;
+    }
+    
+    
+            
+    ul{
+        height: 100%;
     }
 }
 
@@ -157,6 +163,11 @@
     }
 }
 
+.nav-item:hover{
+    width: 250px;
+    overflow: visible;
+}
+
 .navbar-nav{
     
     a{  
@@ -177,4 +188,21 @@
     a:hover {
         font-size:0.5em
     }
+}
+
+#collapseLink{
+    float:right;
+    cursor:pointer;
+    
+    i{
+        color:#fff;
+    }
+}
+
+#collapseLink:hover{
+    background:transparent;
+}
+
+#finInstitutionsDropdownId{
+    
 }

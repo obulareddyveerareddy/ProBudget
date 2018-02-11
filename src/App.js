@@ -10,7 +10,6 @@ import 'bootstrap';
 import 'bootstrap/scss/bootstrap.scss';
 import 'font-awesome/scss/font-awesome.scss';
 import './App.scss';
-
 import ProbudgetLink    from './probudget/ProbudgetRouter';
 const store = configureStore();
 
