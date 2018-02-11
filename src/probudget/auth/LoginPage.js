@@ -12,18 +12,11 @@ class LoginPage extends React.Component{
     firebase.auth().getRedirectResult().then(function(result) {
         console.log('~~~~~~~~~~~~~~~~~~~ >>> LoginPage <---> constructor <<< ~~~~~~~~~~~~~~~~~~~');
         if(result.credential){
-            var token = result.credential.accessToken;
-            var user = result.user;
-            console.log(token);
-            console.log(user);
             props.checkLoginSession(result);
         }
         return result;
     }).catch(function(error) {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log(error.code)
-        console.log(error.message)
+        props.checkLoginSession(error);
     });
     
   }
